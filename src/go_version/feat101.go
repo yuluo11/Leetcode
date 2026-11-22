@@ -1,4 +1,5 @@
 //递归版 遍历版见cpp
+package main
 type TreeNode struct{
 	Val int
 	Left *TreeNode
