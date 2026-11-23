@@ -1,3 +1,4 @@
+//不用queue
 package main
 
 type Node struct {
@@ -9,10 +10,10 @@ type Node struct {
 
 func connect(root *Node) *Node {
 	head :=root	
-	while(head!=nil){
+	for head!=nil {
 		var dummpy Node
 		tail:=&dummpy
-		for(cur *Node=head;cur!=nil;cur=cur.Next){
+		for cur:=head;cur!=nil;cur=cur.Next {
 			if cur.Left!=nil{
 				tail.Next=cur.Left
 				tail=cur.Left
